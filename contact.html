@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f7f6; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8f9fa; }
         nav { background: white; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         .logo { font-weight: bold; color: #004085; font-size: 1.2rem; }
         .nav-links a { margin-left: 20px; text-decoration: none; color: #333; font-weight: 500; }
+        .nav-links a:hover { color: #004085; }
         .active { color: #004085 !important; border-bottom: 2px solid #004085; }
-        .container { max-width: 400px; margin: 60px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .input-group { margin-bottom: 15px; text-align: left; }
-        label { display: block; margin-bottom: 5px; font-weight: 600; }
-        input, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
-        button { width: 100%; padding: 12px; background: #004085; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 10px; }
-        button:hover { background: #002752; }
+        .container { max-width: 600px; margin: 50px auto; padding: 40px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .container h2 { text-align: center; font-size: 28px; color: #333333; margin-bottom: 30px; }
+        .contact-info { line-height: 2; font-size: 18px; color: #555555; }
+        .contact-info a { color: black; text-decoration: none; }
+        .contact-info a:hover { color: #004085; }
     </style>
 </head>
 <body>
@@ -26,26 +26,14 @@
             <a href="contact.html" class="active">Contact</a>
         </div>
     </nav>
+
     <div class="container">
-        <h2 style="text-align: center; color: #004085;">Contact Form</h2>
-        <form action="result.html" method="GET">
-            <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" name="userName" required>
-            </div>
-            <div class="input-group">
-                <label>Sex</label>
-                <select name="userSex">
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
-            </div>
-            <div class="input-group">
-                <label>Phone Number</label>
-                <input type="tel" name="userNumber" required>
-            </div>
-            <button type="submit">Submit Information</button>
-        </form>
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:+639150042749">+63 915 004 2749</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/jefferempasis" target="_blank">facebook.com/jefferempasis</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/pewpewsssshdkdk" target="_blank">@pewpewsssshdkdk</a></p>
+        </div>
     </div>
 </body>
 </html>
