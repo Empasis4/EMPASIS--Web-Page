@@ -3,32 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Submission Result</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .result-card { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); width: 350px; text-align: center; }
-        h2 { color: #28a745; margin-top: 0; }
-        .data-display { text-align: left; background: #f9f9f9; padding: 20px; border-radius: 5px; border-left: 5px solid #004085; margin: 20px 0; }
-        p { margin: 10px 0; color: #555; }
-        span { font-weight: bold; color: #000; }
-        .btn-home { display: inline-block; text-decoration: none; background: #004085; color: white; padding: 10px 20px; border-radius: 5px; }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="result-card">
-        <h2>Data Received</h2>
-        <div class="data-display">
-            <p>Name: <span id="resName"></span></p>
-            <p>Sex: <span id="resSex"></span></p>
-            <p>Number: <span id="resNum"></span></p>
-        </div>
-        <a href="home.html" class="btn-home">Go to Home</a>
-    </div>
 
-    <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        document.getElementById('resName').textContent = urlParams.get('userName');
-        document.getElementById('resSex').textContent = urlParams.get('userSex');
-        document.getElementById('resNum').textContent = urlParams.get('userNumber');
-    </script>
+<div class="result-card">
+    <h2 style="color: green;">Data Received</h2>
+    <div class="data-box">
+        <p>Name: <strong id="resName"></strong></p>
+        <p>Sex: <strong id="resSex"></strong></p>
+        <p>Number: <strong id="resNum"></strong></p>
+    </div>
+    <a href="home.html" class="btn">Go to Home</a>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
