@@ -1,78 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 50px;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-
-        .logo { font-weight: bold; color: #003366; }
-
-        nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #333;
-        }
-
-        .active {
-            color: #003366;
-            border-bottom: 2px solid #003366;
-        }
-
-        .card {
-            max-width: 600px;
-            margin: 100px auto;
-            padding: 40px;
-            background: #fff;
-            text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        .card img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            margin-bottom: 20px;
-        }
-
-        h1 { color: black; }
-
-        p { color: #555; line-height: 1.6; }
-    </style>
+<meta charset="UTF-8">
+<title>Pew Porfolio | About</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <div class="logo">Pew Website</div>
+    <div class="logo">Pew Portfolio</div>
     <nav>
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html" class="active">About</a>
         <a href="contact.html">Contact</a>
+        <button id="themeToggle" class="toggle-btn" aria-label="Toggle Dark Mode"></button>
     </nav>
 </header>
 
 <div class="card">
-    <img src="pew.jpg" alt="Jeffer Empasis">
+    <img src="pew.jpg" alt="Jeffer Empasis" class="avatar">
     <h1>Jeffer L. Empasis</h1>
     <p>
         BSIT student passionate about web development and modern technology.
         Focused on improving skills and building meaningful projects.
     </p>
 </div>
+ 
+
+<section class="about-experience">
+    <div class="card">
+        <h2>Experience</h2>
+        <p class="muted">Brief highlights of my student projects and practical work.</p>
+
+        <ul class="exp-list">
+            <li class="exp-item">
+                <div class="exp-year">2025 — Present</div>
+                <div class="exp-body">
+                    <div class="exp-title">BSIT Student — FSUU</div>
+                    <div class="exp-desc">Studying software fundamentals with emphasis on web development. Built responsive portfolio site and several class projects using HTML, CSS and JavaScript.</div>
+                </div>
+            </li>
+
+            <li class="exp-item">
+                <div class="exp-year">2023</div>
+                <div class="exp-body">
+                    <div class="exp-title">NC II — Computer System Servicing</div>
+                    <div class="exp-desc">National Certificate II pass in June 30, 2023. Certificate No: 23160202002571.</div>
+                </div>
+            </li>
+
+            <li class="exp-item">
+                <div class="exp-year">Personal</div>
+                <div class="exp-body">
+                    <div class="exp-title">Personal Projects</div>
+                    <div class="exp-desc">Maintained small projects and experiments: a to-do app, responsive landing pages, and this portfolio. Focus on clarity and performance.</div>
+                </div>
+            </li>
+        </ul>
+
+        <div style="margin-top:12px">
+            <a href="contact.html" class="btn">Get in touch</a>
+            <a href="#" class="btn secondary">Download Resume</a>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
